@@ -73,35 +73,67 @@ public class Main {
 //        System.out.println(a.equals(b));
 //        System.out.println(a.equals(c));
 //        System.out.println(a.equals(d));
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("What's the capital of France?");
-        String answer = scanner.next();
-        if (answer.equalsIgnoreCase("Paris")) {
-            System.out.println("Correct. +5 points");
-        } else {
-            System.out.println("Nope...");
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("What's the capital of France?");
+//        String answer = scanner.next();
+//        if (answer.equalsIgnoreCase("Paris")) {
+//            System.out.println("Correct. +5 points");
+//        } else {
+//            System.out.println("Nope...");
+//        }
+
+
+//        2. Given the Strings below:
+
+//        String a1 = "abcd";
+//        String a2 = "ABCD";
+//        String a3 = "AB";
+//        String a4 = "cd";
+//
+////        What are the following expressions going to evaluate to (true/false)?
+//
+//        System.out.println(a1 == "abcd");
+//        String b = "ab";
+//        b += "cd";
+//        System.out.println(a1 == b);
+//        System.out.println(a1.toUpperCase() == a2); // false
+//        System.out.println(a1.equals(a2)); // false
+//        System.out.println(a1.equalsIgnoreCase(a2)); // true
+//        System.out.println(a1 == a3.toLowerCase() + a4); // false
+//        System.out.println(a1 == (a3 + a4).toLowerCase()); // false
+//        System.out.println(a2 == a3.toUpperCase() + a4.toUpperCase()); // false
+//        System.out.println(a2.equals(a3 + a4)); // false
+//        System.out.println(a1.equalsIgnoreCase(a3 + a4)); // true
+//        System.out.println(a1.equals((a3+a4).toLowerCase())); // true
+//        System.out.println(a2.equals(a3.toUpperCase() + a4.toUpperCase())); // true
+
+        // Lazy evaluation
+        int number = 0;
+        int a = 50;
+        if (a > 49 || number++ > 50) {
+            System.out.println("Yay");
+        }
+        if (false && ++a > 40) {
+
+        }
+        System.out.println(a);
+        System.out.println(number);
+        /*
+        1. When this code is executed, what are the values of a, b, c, d at the end?
+        Does it print "1" to the console or not?
+
+        int a = 100;
+        int b = 101;
+        boolean c = ++a >= b;
+        int d = 102;
+        if (d-- <= b || ++b > --a) {
+            System.out.println("1");
         }
 
-        /*
-        2. Given the Strings below:
-
-        String a1 = "abcd";
-        String a2 = "ABCD";
-        String a3 = "AB";
-        String a4 = "cd";
-
-        What are the following expressions going to evaluate to (true/false)?
-
-        a1.toUpperCase() == a2
-        a1.equals(a2)
-        a1.equalsIgnoreCase(a2)
-        a1 == a3.toLowerCase() + a4
-        a1 == (a3 + a4).toLowerCase()
-        a2 == a3.toUpperCase() + a4.toUpperCase()
-        a2.equals(a3 + a4)
-        a1.equalsIgnoreCase(a3 + a4)
-        a1.equals((a3+a4).toLowerCase())
-        a2.equals(a3.toUpperCase() + a4.toUpperCase())
+        a = ?
+        b = ?
+        c = ?
+        d = ?
          */
     }
 }
