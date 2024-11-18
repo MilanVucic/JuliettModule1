@@ -51,7 +51,7 @@ public class Main {
         String modified = sb.toString();
     }
 
-    private static void tokenizerExample() {
+    public static void tokenizerExample() {
         System.out.println(0 + 'č');
         System.out.println(0 + 'a');
 
