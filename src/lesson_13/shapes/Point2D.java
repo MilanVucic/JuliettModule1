@@ -21,8 +21,12 @@ public class Point2D {
     }
 
     public double distanceTo(Point2D other) {
-        double a = (this.y - other.y);
-        double b = (this.x - other.x);
+        return distance(this, other);
+    }
+
+    public static double distance(Point2D p1, Point2D p2) {
+        double a = (p1.y - p2.y);
+        double b = (p1.x - p2.x);
         return Math.sqrt(a * a + b * b);
     }
 

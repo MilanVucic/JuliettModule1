@@ -1,14 +1,18 @@
 package lesson_13;
 
+import lesson_13.shapes.Circle;
 import lesson_13.shapes.Point2D;
 
 public class Main {
     public static void main(String[] args) {
-        Point2D p1 = new Point2D(3,4);
+        Point2D p1 = new Point2D(3, 4);
         Point2D p2 = new Point2D(0, 0);
         Point2D p3 = new Point2D(5, 12);
-        System.out.println(p1.distanceTo(p2));
-        System.out.println(p2.distanceTo(p3));
+        Circle c1 = new Circle(2, 0, 3);
+        Circle c2 = new Circle(1);
+        Circle c3 = new Circle(2.01, 0, 3);
+        System.out.println(c1.intersects(c2));
+        System.out.println(c3.intersects(c2));
     }
 
     private static void innerClasses() {
