@@ -6,6 +6,12 @@ public class MyQueue<T> {
 
     }
 
+    // FIFO
+    // circular buffer
+    //   T
+    // 8 5 X X 6 7
+    //         H
+
     public T get() {
         return null;
     }
