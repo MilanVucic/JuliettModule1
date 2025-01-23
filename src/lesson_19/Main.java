@@ -28,20 +28,12 @@ public class Main {
         MessageStatus status = MessageStatus.values()[2];
 
         //
-        switch (status) {
-            case NOT_SENT:
-                System.out.println("Not sent...");
-                break;
-            case SENT:
-                System.out.println("Sent...");
-                break;
-            case DELIVERED:
-                System.out.println("Delivered...");
-                break;
-            case READ:
-                System.out.println("Read...");
-                break;
-        }
+        String message = switch (status) {
+            case NOT_SENT -> "Not sent...";
+            case SENT -> "Sent...";
+            case DELIVERED -> "Delivered...";
+            case READ -> "Read...";
+        };
     }
 
     private static void switchExample() {
