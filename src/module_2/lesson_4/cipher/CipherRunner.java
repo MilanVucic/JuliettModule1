@@ -1,6 +1,7 @@
-package module_2.lesson_4;
+package module_2.lesson_4.cipher;
 
-import module_2.lesson_4.cipher.Cipher;
+import module_2.lesson_4.InfoMessager;
+import module_2.lesson_4.MessageType;
 
 public class CipherRunner {
     private Cipher cipher;
