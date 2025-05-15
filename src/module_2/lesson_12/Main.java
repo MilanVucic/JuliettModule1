@@ -109,6 +109,10 @@ public class Main {
         }
     }
 
+    private synchronized void something() {
+
+    }
+
     private static void mutexExample() {
         Object a = new Object();
 
