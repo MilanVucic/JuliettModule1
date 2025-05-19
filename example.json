@@ -1,0 +1,30 @@
+{
+  "name": "Milan",
+  "age": 31,
+  "height": 185.5,
+  "something": true,
+  "grades": [1, false, 3.5, "asdasd", {"key": "value"}],
+  "address": {
+    "city": "Belgrade",
+    "country": {
+      "name": "Serbia",
+      "isoCode": "RS"
+    },
+    "street": "Some st.",
+    "houseNumber": 55
+  },
+  "readBooks": [
+    {
+      "title": "Some cool book",
+      "author": "Milan Vucic"
+    },
+    {
+      "title": "Harry Potter",
+      "author": "JK Rowling"
+    },
+    {
+      "title": "Harry Potter 2",
+      "author": "JK Rowling"
+    }
+  ]
+}
